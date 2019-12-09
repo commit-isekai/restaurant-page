@@ -48,7 +48,7 @@ let tabsWithContent = (function() {
     });
   });
 
-  // tabs[0].click();
+  tabs[0].click();
 
   navburger.addEventListener('click', toggleNavbar);
 })();
