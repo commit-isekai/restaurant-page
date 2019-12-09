@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Restaurant</title>
 </head>
 <body>
-  <div id="content"></div>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <!-- <img src="../assets/logo.png" alt="logo"> -->
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarItems">
+        <span arian-hidden="true"></span>
+        <span arian-hidden="true"></span>
+        <span arian-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarItems" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">home</a>
+        <a class="navbar-item">contact</a>
+        <a class="navbar-item">menu</a>
+      </div>
+    </div>
+  </nav>
+  <div id="content">
+    
+  </div>
 
   <script src="./main.js"></script>
 </body>
