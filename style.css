@@ -1,5 +1,6 @@
 * {
   color: #293340;
+  box-sizing: border-box;
 }
 
 .tab-content {
@@ -12,11 +13,19 @@
 }
 
 .navbar-burger {
+  display: relative;
+  z-index: 100;
   margin-right: 20px;
   margin-top: 40px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border: 3px solid #C6CBEF;
   border-radius: 5px;
+}
+
+.navbar-menu.is-active {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .menu-button {
@@ -48,7 +57,7 @@
 }
 
 .headline {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .img-section {
@@ -56,7 +65,22 @@
   background-position: center;
   background-size: cover;
   position: absolute;
+  z-index: -1;
   bottom: 0;
   height: 264px;
+  width: 100vw;
+}
+
+.home-section {
+  padding-top: 50px;
+}
+
+.contact-section.is-active {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: 100vw;
 }
