@@ -4,6 +4,7 @@ let tabsWithContent = (function() {
   let tabsContent = document.querySelectorAll(".tab-content");
   let navburger = document.querySelector('.navbar-burger');
   let navbarItems = document.querySelector('#navbarItems')
+  let menuButton = document.querySelector('.menu-button');
 
   // de-activates all tabs except a special one
   let deactvateAllTabs = function() {
@@ -50,4 +51,5 @@ let tabsWithContent = (function() {
   tabs[0].click();
 
   navburger.addEventListener('click', toggleNavbar);
+  menuButton.addEventListener('click', () => tabs[2].click());
 })();
