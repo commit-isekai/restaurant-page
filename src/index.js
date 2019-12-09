@@ -30,7 +30,6 @@ let tabsWithContent = (function() {
     // returns the index of the tab pressed
     // so it can corelate with the section index
   let getIndex = function(el) {
-      console.log(el.parentElement);
     return [...el.parentElement.children].indexOf(el);
   };
 
