@@ -4,7 +4,7 @@
 }
 
 .tab-content {
-  padding: 0rem;
+  padding: 0;
   display: none;
 }
 
@@ -71,7 +71,8 @@
   width: 100vw;
 }
 
-.home-section {
+.home-section,
+.menu-section {
   padding-top: 50px;
 }
 
