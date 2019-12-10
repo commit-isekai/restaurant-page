@@ -1,49 +1,52 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
+
 // self firing function
-let tabsWithContent = (function() {
-  let tabs = document.querySelectorAll(".navbar-menu .navbar-item");
-  let tabsContent = document.querySelectorAll(".tab-content");
-  let navburger = document.querySelector('.navbar-burger');
-  let navbarItems = document.querySelector('#navbarItems')
-  let menuButton = document.querySelector('.menu-button');
+// eslint-disable-next-line func-names
+(function () {
+  const tabs = document.querySelectorAll('.navbar-menu .navbar-item');
+  const tabsContent = document.querySelectorAll('.tab-content');
+  const navburger = document.querySelector('.navbar-burger');
+  const navbarItems = document.querySelector('#navbarItems');
+  const menuButton = document.querySelector('.menu-button');
 
   // de-activates all tabs except a special one
-  let deactvateAllTabs = function() {
-    tabs.forEach(function(tab) {
-      tab.classList.remove("is-active");
+  const deactvateAllTabs = () => {
+    tabs.forEach((tab) => {
+      tab.classList.remove('is-active');
     });
   };
 
   // the tab content is display none if there is no is-active class
   // takes all the tab sections
-  let hideTabsContent = function() {
-    tabsContent.forEach(function(tabContent) {
-      tabContent.classList.remove("is-active");
+  const hideTabsContent = () => {
+    tabsContent.forEach((tabContent) => {
+      tabContent.classList.remove('is-active');
     });
   };
 
+  // a function to get index of an element
+  // returns the index of the tab pressed
+  // so it can corelate with the section index
+  const getIndex = (el) => [...el.parentElement.children].indexOf(el);
+
   // takes a tab and it knows by event listener
   // it needs the index so we can corelate the index of the button with the index of the section
-  let activateTabsContent = function(tab) {
-    tabsContent[getIndex(tab)].classList.add("is-active");
+  const activateTabsContent = (tab) => {
+    tabsContent[getIndex(tab)].classList.add('is-active');
   };
 
-  // a function to get index of an element
-    // returns the index of the tab pressed
-    // so it can corelate with the section index
-  let getIndex = function(el) {
-    return [...el.parentElement.children].indexOf(el);
-  };
 
-  let toggleNavbar = function () { 
+  const toggleNavbar = () => {
     navburger.classList.toggle('is-active');
     navbarItems.classList.toggle('is-active');
-  }
+  };
 
-  tabs.forEach(function(tab) {
-    tab.addEventListener("click", function() {
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
       deactvateAllTabs();
       hideTabsContent();
-      tab.classList.add("is-active");
+      tab.classList.add('is-active');
       activateTabsContent(tab);
     });
   });
@@ -52,4 +55,4 @@ let tabsWithContent = (function() {
 
   navburger.addEventListener('click', toggleNavbar);
   menuButton.addEventListener('click', () => tabs[2].click());
-})();
+}());
