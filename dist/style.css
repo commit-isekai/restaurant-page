@@ -72,6 +72,11 @@
   padding-top: 50px;
 }
 
+.menu-section .info-section .title {
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
 .contact-section.is-active {
   position: absolute;
   top: 0;
@@ -80,4 +85,40 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
+}
+
+.columns {
+  padding: 0 20px;
+}
+
+.column {
+  transition: all .3s ease;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #C6CBEF;
+  border-radius: 3px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  max-width: 342px;
+  height: 307px;
+  margin: 40px auto;
+}
+
+.menu-1 {
+  background-image: url("../assets/menu-1.jpg");
+}
+
+.menu-2 {
+  background-image: url("../assets/menu-2.jpg");
+}
+
+.menu-3 {
+  background-image: url("../assets/menu-3.jpg");
+}
+
+.menu-4 {
+  background-image: url("../assets/menu-4.jpg");
+}
+
+.menu-5 {
+  background-image: url("../assets/menu-5.jpg");
 }
