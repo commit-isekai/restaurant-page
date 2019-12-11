@@ -1,5 +1,4 @@
-change css to sass after finishing
+do all with sass
 
-add sass files to .gitignore
+dont use bulma
 
-make the other sections
