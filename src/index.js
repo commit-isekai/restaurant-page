@@ -7,8 +7,8 @@
   const tabs = document.querySelectorAll('.navbar-menu .navbar-item');
   const tabsContent = document.querySelectorAll('.tab-content');
   const navburger = document.querySelector('.navbar-burger');
-  const navbarItems = document.querySelector('#navbarItems');
-  const menuButton = document.querySelector('.menu-button');
+  const navbarItems = document.querySelector('#tabs');
+  // const menuButton = document.querySelector('.menu-button');
 
   // de-activates all tabs except a special one
   const deactvateAllTabs = () => {
@@ -54,5 +54,5 @@
   tabs[0].click();
 
   navburger.addEventListener('click', toggleNavbar);
-  menuButton.addEventListener('click', () => tabs[2].click());
+  // menuButton.addEventListener('click', () => tabs[2].click());
 }());
