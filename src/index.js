@@ -5,7 +5,7 @@
 // eslint-disable-next-line func-names
 (function () {
   const tabs = document.querySelectorAll('.navbar-menu .navbar-item');
-  const tabsContent = document.querySelectorAll('.tab-content');
+  const tabsContent = document.querySelectorAll('.hero');
   const navburger = document.querySelector('.navbar-burger');
   const navbarItems = document.querySelector('#tabs');
   // const menuButton = document.querySelector('.menu-button');
