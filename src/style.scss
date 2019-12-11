@@ -1,0 +1,45 @@
+$color: (
+    primary: #464159,
+    primary-active: #363244,
+    secondary: #6C7B95,
+    dark-greeen: #8BBABB,
+    light-green: #C7F0DB,
+);
+
+
+@function color($color-name) {
+    @return map-get($map: $color, $key: $color-name);
+}
+
+* {
+    color: color(light-green) !important;
+}
+
+.navbar {
+    background-color: color(primary);
+
+    .navbar-menu {
+        background-color: color(primary);
+
+        .navbar-item {
+
+            &:hover {
+                background-color: color(primary-active);
+            }
+
+            &.is-active {
+                background-color: color(primary-active);
+            }
+        }
+    }
+}
+
+.hero {
+  padding: 0;
+  display: none;
+  background-color: color(primary);
+
+  &.is-active {
+      display: flex;
+  }
+}

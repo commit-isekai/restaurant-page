@@ -1,1 +1,32 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  color: #C7F0DB !important;
+}
+
+.navbar {
+  background-color: #464159;
+}
+
+.navbar .navbar-menu {
+  background-color: #464159;
+}
+
+.navbar .navbar-menu .navbar-item:hover {
+  background-color: #363244;
+}
+
+.navbar .navbar-menu .navbar-item.is-active {
+  background-color: #363244;
+}
+
+.hero {
+  padding: 0;
+  display: none;
+  background-color: #464159;
+}
+
+.hero.is-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
