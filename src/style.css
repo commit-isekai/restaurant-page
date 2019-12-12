@@ -71,26 +71,59 @@ body {
   margin: 60px 0;
 }
 
-.menu-section .container {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+.home-section .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-section .container .image {
+  background-image: url("../assets/filler.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 790px;
+  width: 590px;
+  border: 10px solid #6C7B95;
+  border-radius: 10px;
+}
+
+.home-section .container .image figcaption {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px;
+  background-color: #464159;
+  color: #C7F0DB;
+}
+
+.home-section .container .image figcaption a:hover {
+  color: #6C7B95;
 }
 
 .menu-section .container .column {
-  max-width: 330px;
   margin: auto;
+  max-width: 360px;
   margin-top: 50px;
   text-align: center;
 }
 
 .menu-section .container .column .image {
-  width: 100%;
+  max-width: 330px;
   height: 240px;
   background-color: #C7F0DB;
   border-radius: 5px;
 }
 
-.menu-section .container .column .figcaption {
+.menu-section .container .column .image-caption {
   margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    margin: 0;
+    max-width: 400px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

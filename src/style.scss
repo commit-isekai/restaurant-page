@@ -6,6 +6,14 @@ $color: (
     light-green: #C7F0DB,
 );
 
+$desktop: 1024px;
+
+@mixin desktop() {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
 @function color($color-name) {
     @return map-get($map: $color, $key: $color-name);
 }
@@ -84,27 +92,57 @@ body {
     }
 }
 
-.menu-section {
+.home-section .container {
+    justify-content: space-between;
+    align-items: center;
 
-    .container {
-        align-self: flex-start;
+    .image {
+        background-image: url("../assets/filler.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 790px;
+        width: 590px;
+        border: 10px solid color(secondary);
+        border-radius: 10px;
 
-        .column {
-            max-width: 330px;
-            margin: auto;
-            margin-top: 50px;
-            text-align: center;
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            padding: 10px 20px;
+            background-color: color(primary);
+            color: color(light-green);
 
-            .image {
-                width: 100%;
-                height: 240px;
-                background-color: color(light-green);
-                border-radius: 5px;
-            }
-
-            .figcaption {
-                margin-top: 30px;
+            a:hover {
+                color: color(secondary);
             }
         }
+    }
+}
+
+.menu-section .container {
+
+    .column {
+        margin: auto;
+        max-width: 360px;
+        margin-top: 50px;
+        text-align: center;
+        
+        .image {
+            max-width: 330px;
+            height: 240px;
+            background-color: color(light-green);
+            border-radius: 5px;
+        }
+
+        .image-caption {
+            margin-top: 30px;
+        }
+    }
+}
+
+@include desktop() {
+    .content {
+        margin: 0;
+        max-width: 400px;
     }
 }
