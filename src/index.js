@@ -8,7 +8,7 @@
   const tabsContent = document.querySelectorAll('.hero');
   const navburger = document.querySelector('.navbar-burger');
   const navbarItems = document.querySelector('#tabs');
-  // const menuButton = document.querySelector('.menu-button');
+  const homeMenuButton = document.querySelector('.menu-button');
 
   // de-activates all tabs except a special one
   const deactvateAllTabs = () => {
@@ -54,5 +54,5 @@
   tabs[0].click();
 
   navburger.addEventListener('click', toggleNavbar);
-  // menuButton.addEventListener('click', () => tabs[2].click());
+  homeMenuButton.addEventListener('click', () => tabs[2].click());
 }());
