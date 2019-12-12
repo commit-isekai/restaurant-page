@@ -1,5 +1,11 @@
-* {
+.title,
+.navbar-item,
+.navbar-burger {
   color: #C7F0DB !important;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -28,5 +34,35 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.content {
+  max-width: 350px;
+  margin: auto;
+}
+
+.content .subtitle {
+  color: #6C7B95 !important;
+}
+
+.content .button {
+  margin-top: 50px;
+  border: 3px solid #C7F0DB !important;
+  color: #C7F0DB;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: transparent;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.content .button:hover {
+  color: #464159;
+  background-color: #8BBABB !important;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 /*# sourceMappingURL=style.css.map */

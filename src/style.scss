@@ -2,17 +2,24 @@ $color: (
     primary: #464159,
     primary-active: #363244,
     secondary: #6C7B95,
-    dark-greeen: #8BBABB,
+    dark-green: #8BBABB,
     light-green: #C7F0DB,
 );
-
 
 @function color($color-name) {
     @return map-get($map: $color, $key: $color-name);
 }
 
-* {
-    color: color(light-green) !important;
+$primary: color(primary);
+
+.title,
+.navbar-item,
+.navbar-burger {
+color: color(light-green) !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -42,4 +49,33 @@ $color: (
   &.is-active {
       display: flex;
   }
+}
+
+.content {
+
+    max-width: 350px;
+    margin: auto;
+
+    .subtitle {
+        color: color(secondary) !important;
+    }
+
+    .button {
+        margin-top: 50px;
+        border: 3px solid color(light-green) !important;
+        color: color(light-green);
+        border-radius: 10px;
+        padding-bottom: 40px;
+        padding-top: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: transparent;
+        transition: all .2s ease;
+
+        &:hover {
+            color: color(primary);
+            background-color: color(dark-green) !important;
+            transform: translateY(-3px);
+        }
+    }
 }
