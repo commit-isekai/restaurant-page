@@ -132,7 +132,25 @@ body {
             max-width: 330px;
             height: 240px;
             background-color: color(light-green);
+            background-size: cover;
+            background-position: center;
             border-radius: 5px;
+
+            &.img-1 {
+                background-image: url("../assets/menu-1.jpg");
+            }
+            &.img-2 {
+                background-image: url("../assets/menu-2.jpg");
+            }
+            &.img-3 {
+                background-image: url("../assets/menu-3.jpg");
+            }
+            &.img-4 {
+                background-image: url("../assets/menu-4.jpg");
+            }
+            &.img-5 {
+                background-image: url("../assets/menu-5.jpg");
+            }
         }
 
         .image-caption {
