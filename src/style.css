@@ -32,14 +32,7 @@ body {
 
 .hero {
   padding: 0;
-  display: none;
   background-color: #464159;
-}
-
-.hero.is-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .content {

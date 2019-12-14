@@ -56,11 +56,11 @@ body {
 
 .hero {
   padding: 0;
-  display: none;
+//   display: none;
   background-color: color(primary);
 
   &.is-active {
-      display: flex;
+    //   display: flex;
   }
 }
 
