@@ -2,6 +2,7 @@
 
 export default function createHome() {
   const wrapper = document.querySelector('#content');
+  const tabs = document.querySelectorAll('.navbar-menu .navbar-item');
 
   const hero = document.createElement('section');
   const heroBody = document.createElement('div');
@@ -43,6 +44,11 @@ export default function createHome() {
   menuButtonIcon.appendChild(icon);
   container.appendChild(image);
   image.appendChild(imageCaption);
+
+  menuButton.addEventListener('click', () => {
+    wrapper.innerHTML = '';
+    tabs[2].click();
+  });
 
   wrapper.appendChild(hero);
 }
