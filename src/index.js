@@ -1,9 +1,9 @@
 /* eslint linebreak-style: ["error", "windows"] */
-import createHome from './home';
-import createContact from './contact';
+// import createHome from './home';
+// import createContact from './contact';
 import createMenu from './menu';
 
-window.addEventListener('load', createHome());
+window.addEventListener('load', createMenu());
 
 
 // // self firing function
