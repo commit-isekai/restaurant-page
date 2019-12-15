@@ -1,4 +1,0 @@
-do all with sass
-
-dont use bulma
-
